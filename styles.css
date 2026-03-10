@@ -261,14 +261,12 @@ ul {
 
 .hero-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: 70% center;
     z-index: 0;
 }
 
@@ -573,10 +571,61 @@ ul {
 }
 
 /* ==========================================================================
+   REVIEWS SECTION
+   ========================================================================== */
+.reviews-section {
+    padding: 80px 0 100px;
+    background: linear-gradient(180deg, #f8fafc 0%, #e8eff5 60%, #d4e3ee 100%);
+    position: relative;
+}
+
+.reviews-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), #1F6889);
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.reviews-label {
+    color: var(--primary);
+    font-family: var(--font-head);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.reviews-title {
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.reviews-subtitle {
+    font-size: 1.05rem;
+    color: var(--gray-500);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
    TECH FOOTER
    ========================================================================== */
 .tech-footer {
-    background: #0ea5e9;
+    background: #1F6889;
     /* Tech Blue Footer */
     color: var(--white);
     padding: 80px 0 20px;
@@ -584,7 +633,7 @@ ul {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 60px;
     margin-bottom: 60px;
 }
