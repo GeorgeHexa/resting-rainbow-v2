@@ -280,7 +280,7 @@ ul {
 .hero-content-centered {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: left;
     padding: 120px 40px;
 }
 
@@ -300,8 +300,6 @@ ul {
     margin-bottom: 40px;
     line-height: 1.6;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ==========================================================================
